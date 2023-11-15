@@ -1,0 +1,22 @@
+<div
+  class="w-full bg-base-100 shadow-xl cursor-pointer hover:opacity-50 h-full rounded-lg"
+>
+  <a [routerLink]="['/movie-detail', movie.id]">
+    <div
+      class="absolute text-xs text-white bg-slate-600 opacity-75 p-1 rounded-tl-lg rounded-br-lg"
+    >
+      &#11088; {{ movie.vote_average }}
+    </div>
+
+    <img
+      class="mx-auto rounded-t-lg h-full"
+      loading="lazy"
+      [src]="getImage(movie.poster_path)"
+    />
+    <div
+      class="text-black text-xs md:text-sm flex items-center justify-center p-1 cursor-pointer line-clamp-2 h-14 font-semibold bg-slate-500 rounded-b-lg"
+    >
+      {{ movie.title }}
+    </div>
+  </a>
+</div>

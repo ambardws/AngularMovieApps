@@ -1,0 +1,23 @@
+<button class="btn btn-primary" onclick="my_modal_1.showModal()">
+  Watch Trailer
+</button>
+<dialog id="my_modal_1" class="modal text-slate-500">
+  <div class="flex items-center justify-center relative h-[80vh] w-[90vw] p-0">
+    <form method="dialog">
+      <button
+        class="btn btn-xs btn-circle bg-slate-300 rounded-full btn-ghost absolute right-0 top-0 hover:text-white"
+        (click)="onClose()"
+      >
+        &times;
+      </button>
+    </form>
+    <iframe
+      class="h-full w-full"
+      [src]="getVideoUrl()"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    >
+    </iframe>
+  </div>
+</dialog>

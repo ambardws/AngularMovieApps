@@ -1,0 +1,24 @@
+<div *ngIf="movie" class="container max-w-full bg-[#192655] text-slate-300">
+  <div
+    class="hero min-h-screen bg-base-200 opacity-95 text-white"
+    [style.background-image]="
+      movie.backdrop_path
+        ? 'url(https://image.tmdb.org/t/p/original' + movie.backdrop_path + ')'
+        : ''
+    "
+  >
+    <div class="hero-content text-center">
+      <div class="max-w-md">
+        <h1 class="text-5xl font-bold">{{ movie.title }}</h1>
+        <p class="py-6">
+          {{ movie.overview }}
+        </p>
+        <app-modal-play [video]="movie.id"></app-modal-play>
+      </div>
+    </div>
+  </div>
+  <app-description [movie]="movie" [director]="director"></app-description>
+  <app-photos [photos]="photos"></app-photos>
+  <app-casts [cast]="cast"></app-casts>
+  <app-footer></app-footer>
+</div>

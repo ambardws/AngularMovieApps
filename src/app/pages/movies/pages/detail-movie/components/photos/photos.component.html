@@ -1,0 +1,9 @@
+<h1 class="text-slate-300 text-2xl text-center">Photos</h1>
+<div class="flex mt-3 p-5 overflow-x-auto">
+  <img
+    *ngFor="let image of photos"
+    class="mx-auto sm:w-3/4 lg:w-2/4 px-5"
+    loading="lazy"
+    [src]="getImage(image.file_path)"
+  />
+</div>
