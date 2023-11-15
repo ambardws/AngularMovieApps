@@ -1,10 +1,41 @@
 # AngularMovieApps
 
+Developer Guide Frontend Angular Movie Apps, this project using Angular
+
+## Prerequisites
+
+Install [Node.js](https://nodejs.org/en) which includes Node Package Manager
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
+
+## If haven't installed Angular CLI
+
+```bash
+  npm install -g @angular/cli
+```
+
+## Dependencies
+
+- NodeJs 18.xx.xx
+
+## Stacks
+
+- Angular 16.2.5
+- Tailwind 3.3.5
+
+## Installation
+
+```bash
+npm install
+```
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+```bash
+ng serve
+```
+
+The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
