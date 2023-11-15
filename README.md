@@ -23,6 +23,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Angular 16.2.5
 - Tailwind 3.3.5
 
+## Environtment setup
+
+Create environtment.ts in src/environments with value below (Is only testing, in real case don't show your api key to anyone)
+
+```bash
+export const environment = {
+  API_BASE_URL: 'https://api.themoviedb.org/3/movie',
+  API_KEY: 'b45900d0aae22fc3aa0a9c7a702bbcfe',
+};
+
+```
+
 ## Installation
 
 ```bash
