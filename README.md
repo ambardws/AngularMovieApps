@@ -25,7 +25,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Environtment setup
 
-Create environtment.ts in src/environments with value below (Is only testing, in real case don't show your api key to anyone)
+Create folder environtments in src and put environtment.ts (src/enviroments/environtment.ts). Input with value below (Is only testing, in real case don't show your api key to anyone)
 
 ```bash
 export const environment = {
