@@ -9,7 +9,6 @@ import { DescriptionComponent } from './pages/detail-movie/components/descriptio
 import { PhotosComponent } from './pages/detail-movie/components/photos/photos.component';
 import { CastsComponent } from './pages/detail-movie/components/casts/casts.component';
 import { FooterComponent } from './pages/detail-movie/components/footer/footer.component';
-import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { ModalPlayComponent } from './pages/detail-movie/components/modal/modal-play/modal-play.component';
 
 @NgModule({
@@ -23,6 +22,6 @@ import { ModalPlayComponent } from './pages/detail-movie/components/modal/modal-
     FooterComponent,
     ModalPlayComponent,
   ],
-  imports: [CommonModule, ListsMovieRoutingModule, InfiniteScrollModule],
+  imports: [CommonModule, ListsMovieRoutingModule],
 })
 export class ListsMovieModule {}
