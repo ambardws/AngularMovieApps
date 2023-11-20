@@ -45,7 +45,7 @@ export class DescriptionComponent implements OnInit {
 
   public handleFavorites() {
     const favoritesData = localStorage.getItem('favorites');
-    this.myFavorites = favoritesData ? JSON.parse(favoritesData) : this.movie;
+    this.myFavorites = favoritesData ? JSON.parse(favoritesData) : [];
     const index = this.myFavorites.findIndex(
       (item) => item.id === this.movie.id
     );
